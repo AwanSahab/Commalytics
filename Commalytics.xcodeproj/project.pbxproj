@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E53C5EDDC1A1FCD35F881F6 /* Pods_CommalyticsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B230B94660183BC8E079B30 /* Pods_CommalyticsUITests.framework */; };
+		AC5EB186A8C748DFA99BDCBD /* Pods_Commalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EA248F499B380FC3A84023 /* Pods_Commalytics.framework */; };
+		CD696DF4E8464C4E85DA0DD0 /* Pods_CommalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694404C776DB754A76EDEFF2 /* Pods_CommalyticsTests.framework */; };
+		FA12D3A31FFCE8A3002C4E14 /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3A21FFCE8A3002C4E14 /* DayAxisValueFormatter.swift */; };
+		FA12D3A81FFCE90E002C4E14 /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3A71FFCE90E002C4E14 /* XYMarkerView.swift */; };
+		FA12D3AB1FFCE955002C4E14 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3AA1FFCE955002C4E14 /* BalloonMarker.swift */; };
 		FAF7FA451FFCE3260038B937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7FA441FFCE3260038B937 /* AppDelegate.swift */; };
 		FAF7FA471FFCE3260038B937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7FA461FFCE3260038B937 /* ViewController.swift */; };
 		FAF7FA4A1FFCE3260038B937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF7FA481FFCE3260038B937 /* Main.storyboard */; };
@@ -34,6 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05EA248F499B380FC3A84023 /* Pods_Commalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0873FC8937CCFF87C0FD5A26 /* Pods-Commalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Commalytics/Pods-Commalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		2215B315E83B947C3F5E7118 /* Pods-CommalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommalyticsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommalyticsUITests/Pods-CommalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3917F7C2959B71E5742E3E5C /* Pods-CommalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommalyticsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommalyticsTests/Pods-CommalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D017604338CB6758340A589 /* Pods-Commalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Commalytics/Pods-Commalytics.release.xcconfig"; sourceTree = "<group>"; };
+		694404C776DB754A76EDEFF2 /* Pods_CommalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommalyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B230B94660183BC8E079B30 /* Pods_CommalyticsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommalyticsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0C6E3853BBB837E3D7F25E /* Pods-CommalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommalyticsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommalyticsUITests/Pods-CommalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD135D98B21EAFFE5B07EFA5 /* Pods-CommalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommalyticsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommalyticsTests/Pods-CommalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA12D3A21FFCE8A3002C4E14 /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
+		FA12D3A71FFCE90E002C4E14 /* XYMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
+		FA12D3AA1FFCE955002C4E14 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 		FAF7FA411FFCE3260038B937 /* Commalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF7FA441FFCE3260038B937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF7FA461FFCE3260038B937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5EB186A8C748DFA99BDCBD /* Pods_Commalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD696DF4E8464C4E85DA0DD0 /* Pods_CommalyticsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E53C5EDDC1A1FCD35F881F6 /* Pods_CommalyticsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01FFAB400E8407142CA85B5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05EA248F499B380FC3A84023 /* Pods_Commalytics.framework */,
+				694404C776DB754A76EDEFF2 /* Pods_CommalyticsTests.framework */,
+				8B230B94660183BC8E079B30 /* Pods_CommalyticsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18C8260392A1C3D8020F53C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0873FC8937CCFF87C0FD5A26 /* Pods-Commalytics.debug.xcconfig */,
+				5D017604338CB6758340A589 /* Pods-Commalytics.release.xcconfig */,
+				3917F7C2959B71E5742E3E5C /* Pods-CommalyticsTests.debug.xcconfig */,
+				CD135D98B21EAFFE5B07EFA5 /* Pods-CommalyticsTests.release.xcconfig */,
+				2215B315E83B947C3F5E7118 /* Pods-CommalyticsUITests.debug.xcconfig */,
+				8E0C6E3853BBB837E3D7F25E /* Pods-CommalyticsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA12D3A11FFCE88C002C4E14 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA12D3A21FFCE8A3002C4E14 /* DayAxisValueFormatter.swift */,
+				FA12D3A71FFCE90E002C4E14 /* XYMarkerView.swift */,
+				FA12D3AA1FFCE955002C4E14 /* BalloonMarker.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		FA12D3A41FFCE8C5002C4E14 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7FA441FFCE3260038B937 /* AppDelegate.swift */,
+				FAF7FA4B1FFCE3260038B937 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		FA12D3A51FFCE8D3002C4E14 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7FA481FFCE3260038B937 /* Main.storyboard */,
+				FAF7FA4D1FFCE3260038B937 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		FA12D3A61FFCE8DE002C4E14 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7FA461FFCE3260038B937 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		FAF7FA381FFCE3260038B937 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +161,8 @@
 				FAF7FA581FFCE3260038B937 /* CommalyticsTests */,
 				FAF7FA631FFCE3260038B937 /* CommalyticsUITests */,
 				FAF7FA421FFCE3260038B937 /* Products */,
+				18C8260392A1C3D8020F53C7 /* Pods */,
+				01FFAB400E8407142CA85B5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +179,10 @@
 		FAF7FA431FFCE3260038B937 /* Commalytics */ = {
 			isa = PBXGroup;
 			children = (
-				FAF7FA441FFCE3260038B937 /* AppDelegate.swift */,
-				FAF7FA461FFCE3260038B937 /* ViewController.swift */,
-				FAF7FA481FFCE3260038B937 /* Main.storyboard */,
-				FAF7FA4B1FFCE3260038B937 /* Assets.xcassets */,
-				FAF7FA4D1FFCE3260038B937 /* LaunchScreen.storyboard */,
+				FA12D3A61FFCE8DE002C4E14 /* ViewController */,
+				FA12D3A51FFCE8D3002C4E14 /* StoryBoard */,
+				FA12D3A41FFCE8C5002C4E14 /* Support */,
+				FA12D3A11FFCE88C002C4E14 /* Helper Classes */,
 				FAF7FA501FFCE3260038B937 /* Info.plist */,
 			);
 			path = Commalytics;
@@ -132,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF7FA691FFCE3260038B937 /* Build configuration list for PBXNativeTarget "Commalytics" */;
 			buildPhases = (
+				482F8C98DBD1F6A55DB309C7 /* [CP] Check Pods Manifest.lock */,
 				FAF7FA3D1FFCE3260038B937 /* Sources */,
 				FAF7FA3E1FFCE3260038B937 /* Frameworks */,
 				FAF7FA3F1FFCE3260038B937 /* Resources */,
+				FAD077DD2A2A69C86B0EF120 /* [CP] Embed Pods Frameworks */,
+				2F0E406D36009CB8E9F004A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF7FA6C1FFCE3260038B937 /* Build configuration list for PBXNativeTarget "CommalyticsTests" */;
 			buildPhases = (
+				C50F91090DC8D0C6F749D78B /* [CP] Check Pods Manifest.lock */,
 				FAF7FA511FFCE3260038B937 /* Sources */,
 				FAF7FA521FFCE3260038B937 /* Frameworks */,
 				FAF7FA531FFCE3260038B937 /* Resources */,
+				8BDDB83A22E2F12831EB78CA /* [CP] Embed Pods Frameworks */,
+				DECD2ED0108BFF54BAFAE9B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF7FA6F1FFCE3260038B937 /* Build configuration list for PBXNativeTarget "CommalyticsUITests" */;
 			buildPhases = (
+				888EBC932FE31249A1659B3E /* [CP] Check Pods Manifest.lock */,
 				FAF7FA5C1FFCE3260038B937 /* Sources */,
 				FAF7FA5D1FFCE3260038B937 /* Frameworks */,
 				FAF7FA5E1FFCE3260038B937 /* Resources */,
+				E4420431041490E645ADCA49 /* [CP] Embed Pods Frameworks */,
+				4172973BDC9E89E279FF1577 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +344,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F0E406D36009CB8E9F004A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Commalytics/Pods-Commalytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4172973BDC9E89E279FF1577 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommalyticsUITests/Pods-CommalyticsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		482F8C98DBD1F6A55DB309C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Commalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		888EBC932FE31249A1659B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommalyticsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDDB83A22E2F12831EB78CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommalyticsTests/Pods-CommalyticsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50F91090DC8D0C6F749D78B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommalyticsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECD2ED0108BFF54BAFAE9B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommalyticsTests/Pods-CommalyticsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4420431041490E645ADCA49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommalyticsUITests/Pods-CommalyticsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD077DD2A2A69C86B0EF120 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Commalytics/Pods-Commalytics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Commalytics/Pods-Commalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAF7FA3D1FFCE3260038B937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAF7FA471FFCE3260038B937 /* ViewController.swift in Sources */,
+				FA12D3A31FFCE8A3002C4E14 /* DayAxisValueFormatter.swift in Sources */,
 				FAF7FA451FFCE3260038B937 /* AppDelegate.swift in Sources */,
+				FA12D3A81FFCE90E002C4E14 /* XYMarkerView.swift in Sources */,
+				FA12D3AB1FFCE955002C4E14 /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +669,7 @@
 		};
 		FAF7FA6A1FFCE3260038B937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0873FC8937CCFF87C0FD5A26 /* Pods-Commalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -433,12 +679,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Commalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		FAF7FA6B1FFCE3260038B937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D017604338CB6758340A589 /* Pods-Commalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,12 +695,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Commalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		FAF7FA6D1FFCE3260038B937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3917F7C2959B71E5742E3E5C /* Pods-CommalyticsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +719,7 @@
 		};
 		FAF7FA6E1FFCE3260038B937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD135D98B21EAFFE5B07EFA5 /* Pods-CommalyticsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +737,7 @@
 		};
 		FAF7FA701FFCE3260038B937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2215B315E83B947C3F5E7118 /* Pods-CommalyticsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +754,7 @@
 		};
 		FAF7FA711FFCE3260038B937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0C6E3853BBB837E3D7F25E /* Pods-CommalyticsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

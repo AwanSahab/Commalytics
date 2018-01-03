@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Commalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egU-hS-2IA">
+                                <rect key="frame" x="20" y="20" width="240" height="794"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rW-C2-y7S">
+                                        <rect key="frame" x="36" y="55" width="169.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55e-j7-F5P">
+                                        <rect key="frame" x="58" y="171" width="124" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="ufy-FE-coK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Sales By Year">
+                                            <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="salesByYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2E-cG-boG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91752570867538452" green="0.90561926364898682" blue="0.92156440019607544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="0rW-C2-y7S" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="DLK-MW-Hey"/>
+                                    <constraint firstAttribute="width" constant="240" id="L0h-b2-9hR"/>
+                                    <constraint firstItem="0rW-C2-y7S" firstAttribute="top" secondItem="egU-hS-2IA" secondAttribute="top" constant="55" id="jbQ-O9-0fe"/>
+                                    <constraint firstItem="55e-j7-F5P" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="sc4-ym-tvo"/>
+                                    <constraint firstItem="55e-j7-F5P" firstAttribute="top" secondItem="0rW-C2-y7S" secondAttribute="bottom" constant="80" id="xVO-DG-LIg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbE-mu-V4D" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="280" y="20" width="812" height="794"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data To Show, Please Select a Dashboard to Display." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIr-uP-ywq">
+                                        <rect key="frame" x="156" y="297" width="500" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="500" id="XvC-yl-U2z"/>
+                                            <constraint firstAttribute="height" constant="200" id="rKn-4k-AxG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22465997409326421" green="0.22465997409326421" blue="0.22465997409326421" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="UIr-uP-ywq" firstAttribute="centerX" secondItem="SbE-mu-V4D" secondAttribute="centerX" id="7QI-Me-jFH"/>
+                                    <constraint firstItem="UIr-uP-ywq" firstAttribute="centerY" secondItem="SbE-mu-V4D" secondAttribute="centerY" id="day-BX-Qpe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SbE-mu-V4D" secondAttribute="bottom" constant="20" id="73S-XX-cw4"/>
+                            <constraint firstItem="SbE-mu-V4D" firstAttribute="leading" secondItem="egU-hS-2IA" secondAttribute="trailing" constant="20" id="DWN-De-SaJ"/>
+                            <constraint firstItem="egU-hS-2IA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DZ9-3f-sSt"/>
+                            <constraint firstItem="egU-hS-2IA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SKo-2Q-eCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SbE-mu-V4D" secondAttribute="trailing" constant="20" id="ccy-PA-R7W"/>
+                            <constraint firstItem="SbE-mu-V4D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uF2-Bt-reL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="egU-hS-2IA" secondAttribute="bottom" constant="20" id="x1d-GJ-vdQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="SbE-mu-V4D" id="b5p-B1-0Y1"/>
+                        <outlet property="noShowLabel" destination="UIr-uP-ywq" id="WZo-8y-J96"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.97122302158274" y="131.65467625899282"/>
+        </scene>
+    </scenes>
+</document>
