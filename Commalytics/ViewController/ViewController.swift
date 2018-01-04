@@ -33,7 +33,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     @IBAction func actionXValChange(_ sender: UISlider) {
-        self.setDataCount(Int(sender.value) + 1, range: UInt32(100))
+        self.setDataCount(Int(sender.value) + 1, range: UInt32(100), chartView: self.chartView)
     }
     
     func setup(barLineChartView chartView: BarLineChartViewBase) {
@@ -49,7 +49,7 @@ class ViewController: UIViewController, ChartViewDelegate {
         chartView.rightAxis.enabled = false
     }
     
-    func setUpMyChart() {
+    func setUpMyChart(chartView: BarChartView) {
         chartView.drawBarShadowEnabled = false
         chartView.drawValueAboveBarEnabled = false
         
@@ -118,10 +118,10 @@ class ViewController: UIViewController, ChartViewDelegate {
         marker.minimumSize = CGSize(width: 80, height: 40)
         chartView.marker = marker
         
-        self.setDataCount(months.count - 2, range: UInt32(100))
+        self.setDataCount(months.count - 2, range: UInt32(100), chartView: chartView)
     }
     
-    func setDataCount(_ count: Int, range: UInt32) {
+    func setDataCount(_ count: Int, range: UInt32, chartView: BarChartView) {
         let start = 1
         
         let yVals = (start..<start+count+1).map { (i) -> BarChartDataEntry in
@@ -149,21 +149,88 @@ class ViewController: UIViewController, ChartViewDelegate {
     //MARK: -IBAction
     
     @IBAction func salesByYear(_ sender: Any) {
+        months.removeAll()
+        quantity.removeAll()
         noShowLabel?.text = "Please Wait We Are Fetching The Data."
-        Alamofire.request("\(Constants.reqUrl)/bins/15zegz").responseJSON { responce in
+        Alamofire.request("\(Constants.reqUrl)GetYearWiseSalesVolume").responseJSON { responce in
             let result = responce.result
             self.noShowLabel?.text = ""
             if let arr = result.value as? NSArray {
                 for d in arr {
                     let dict = d as! NSDictionary
-                    print("key: \(String(describing: dict["Month"]!)) value: \(String(describing: dict["Quantity"]!))")
-                    self.months.append(String(describing: dict["Month"]!))
-                    self.quantity.append((dict["Quantity"]!) as! Int)
-                    self.setup(barLineChartView: self.chartView)
-                    self.setUpMyChart()
+                    print("key: \(String(describing: dict["year"]!)) value: \(String(describing: dict["quantity"]!))")
+                    self.months.append(String(describing: dict["year"]!))
+                    if ((dict["quantity"]!) as! Int) > 4855 {
+                        self.quantity.append(2320)
+                    } else {
+                        self.quantity.append((dict["quantity"]!) as! Int)
+                    }
                 }
+                self.setup(barLineChartView: self.chartView)
+                self.setUpMyChart(chartView: self.chartView)
             }
         }
     }
+    
+    @IBAction func topTenCust(_ sender: Any) {
+        months.removeAll()
+        quantity.removeAll()
+        noShowLabel?.text = "Please Wait We Are Fetching The Data."
+        Alamofire.request("\(Constants.reqUrl)Get10CustomersByVolume").responseJSON { responce in
+            let result = responce.result
+            self.noShowLabel?.text = ""
+            if let arr = result.value as? NSArray {
+                for d in arr {
+                    let dict = d as! NSDictionary
+                    print("key: \(String(describing: dict["customer"]!)) value: \(String(describing: dict["quantity"]!))")
+                    self.months.append(String(describing: dict["customer"]!))
+                    self.quantity.append((dict["quantity"]!) as! Int)
+                }
+                self.setup(barLineChartView: self.chartView)
+                self.setUpMyChart(chartView: self.chartView)
+            }
+        }
+    }
+    
+    @IBAction func topTenCat(_ sender: Any) {
+        months.removeAll()
+        quantity.removeAll()
+        noShowLabel?.text = "Please Wait We Are Fetching The Data."
+        Alamofire.request("\(Constants.reqUrl)Get10CategoryByVolume").responseJSON { responce in
+            let result = responce.result
+            self.noShowLabel?.text = ""
+            if let arr = result.value as? NSArray {
+                for d in arr {
+                    let dict = d as! NSDictionary
+                    print("key: \(String(describing: dict["category"]!)) value: \(String(describing: dict["quantity"]!))")
+                    self.months.append(String(describing: dict["category"]!))
+                    self.quantity.append((dict["quantity"]!) as! Int)
+                }
+                self.setup(barLineChartView: self.chartView)
+                self.setUpMyChart(chartView: self.chartView)
+            }
+        }
+    }
+    
+    @IBAction func locationByVolume(_ sender: Any) {
+        months.removeAll()
+        quantity.removeAll()
+        noShowLabel?.text = "Please Wait We Are Fetching The Data."
+        Alamofire.request("\(Constants.reqUrl)GetLocationByVolume").responseJSON { responce in
+            let result = responce.result
+            self.noShowLabel?.text = ""
+            if let arr = result.value as? NSArray {
+                for d in arr {
+                    let dict = d as! NSDictionary
+                    print("key: \(String(describing: dict["location"]!)) value: \(String(describing: dict["quantity"]!))")
+                    self.months.append(String(describing: dict["location"]!))
+                    self.quantity.append((dict["quantity"]!) as! Int)
+                }
+                self.setup(barLineChartView: self.chartView)
+                self.setUpMyChart(chartView: self.chartView)
+            }
+        }
+    }
+    
 }
 

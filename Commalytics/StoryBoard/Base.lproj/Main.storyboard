@@ -40,12 +40,57 @@
                                             <action selector="salesByYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2E-cG-boG"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a72-uD-3co">
+                                        <rect key="frame" x="37" y="248" width="166" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="S8A-Ze-BnJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Top 10 Customers">
+                                            <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="topTenCust:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNd-vS-bIb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-xi-X64">
+                                        <rect key="frame" x="37" y="325" width="166" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="oi9-gW-DIH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Top 10 Categories">
+                                            <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="topTenCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDJ-iM-q4J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slA-du-2mg">
+                                        <rect key="frame" x="32.5" y="402" width="175" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="DiX-y1-sJO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Most Sale Location">
+                                            <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="locationByVolume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZj-Of-aUs"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.91752570867538452" green="0.90561926364898682" blue="0.92156440019607544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="0rW-C2-y7S" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="DLK-MW-Hey"/>
+                                    <constraint firstItem="a72-uD-3co" firstAttribute="top" secondItem="55e-j7-F5P" secondAttribute="bottom" constant="25" id="IHy-y0-sxJ"/>
                                     <constraint firstAttribute="width" constant="240" id="L0h-b2-9hR"/>
+                                    <constraint firstItem="Pih-xi-X64" firstAttribute="top" secondItem="a72-uD-3co" secondAttribute="bottom" constant="25" id="NOu-gp-q94"/>
+                                    <constraint firstItem="a72-uD-3co" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="Sz6-hK-mSg"/>
+                                    <constraint firstItem="slA-du-2mg" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="U8T-UE-xUq"/>
+                                    <constraint firstItem="Pih-xi-X64" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="Xrq-DV-Jbf"/>
                                     <constraint firstItem="0rW-C2-y7S" firstAttribute="top" secondItem="egU-hS-2IA" secondAttribute="top" constant="55" id="jbQ-O9-0fe"/>
+                                    <constraint firstItem="slA-du-2mg" firstAttribute="top" secondItem="Pih-xi-X64" secondAttribute="bottom" constant="25" id="nnP-FB-HYQ"/>
                                     <constraint firstItem="55e-j7-F5P" firstAttribute="centerX" secondItem="egU-hS-2IA" secondAttribute="centerX" id="sc4-ym-tvo"/>
                                     <constraint firstItem="55e-j7-F5P" firstAttribute="top" secondItem="0rW-C2-y7S" secondAttribute="bottom" constant="80" id="xVO-DG-LIg"/>
                                 </constraints>
