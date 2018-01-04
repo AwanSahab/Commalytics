@@ -150,7 +150,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     
     @IBAction func salesByYear(_ sender: Any) {
         noShowLabel?.text = "Please Wait We Are Fetching The Data."
-        Alamofire.request("https://api.myjson.com/bins/15zegz").responseJSON { responce in
+        Alamofire.request("\(Constants.reqUrl)/bins/15zegz").responseJSON { responce in
             let result = responce.result
             self.noShowLabel?.text = ""
             if let arr = result.value as? NSArray {

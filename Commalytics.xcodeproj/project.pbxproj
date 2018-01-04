@@ -13,6 +13,7 @@
 		FA12D3A31FFCE8A3002C4E14 /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3A21FFCE8A3002C4E14 /* DayAxisValueFormatter.swift */; };
 		FA12D3A81FFCE90E002C4E14 /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3A71FFCE90E002C4E14 /* XYMarkerView.swift */; };
 		FA12D3AB1FFCE955002C4E14 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D3AA1FFCE955002C4E14 /* BalloonMarker.swift */; };
+		FA9D46271FFE308E00B2EBF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D46261FFE308E00B2EBF8 /* Constants.swift */; };
 		FAF7FA451FFCE3260038B937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7FA441FFCE3260038B937 /* AppDelegate.swift */; };
 		FAF7FA471FFCE3260038B937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7FA461FFCE3260038B937 /* ViewController.swift */; };
 		FAF7FA4A1FFCE3260038B937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF7FA481FFCE3260038B937 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		FA12D3A21FFCE8A3002C4E14 /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
 		FA12D3A71FFCE90E002C4E14 /* XYMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
 		FA12D3AA1FFCE955002C4E14 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		FA9D46261FFE308E00B2EBF8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FAF7FA411FFCE3260038B937 /* Commalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF7FA441FFCE3260038B937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF7FA461FFCE3260038B937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				FAF7FA441FFCE3260038B937 /* AppDelegate.swift */,
 				FAF7FA4B1FFCE3260038B937 /* Assets.xcassets */,
+				FA9D46261FFE308E00B2EBF8 /* Constants.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				FAF7FA451FFCE3260038B937 /* AppDelegate.swift in Sources */,
 				FA12D3A81FFCE90E002C4E14 /* XYMarkerView.swift in Sources */,
 				FA12D3AB1FFCE955002C4E14 /* BalloonMarker.swift in Sources */,
+				FA9D46271FFE308E00B2EBF8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
